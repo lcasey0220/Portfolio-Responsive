@@ -239,7 +239,7 @@ form {
 }
 
 #footersec {
-	position:absolute;
+	position:fixed;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -257,7 +257,7 @@ footer {
 }
 
 
-@media only screen and (max-width: 980px) {
+@media screen and (max-width: 980px) {
 	.header,
 	.mainpage,
 	.footer {
@@ -265,13 +265,109 @@ footer {
 		padding:0.02px;
 	}
 
-	
+	.mainpage{
+		padding-top: 130px;
+	}
+
+	.mainsection{
+		max-width:420px;
+	}
+
+	#mypic{
+		width:100%;
+		margin-bottom: 20px;
+	}
+
+	.portfoliosquare{
+		width: 100%;
+	}
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+	#mainpage{
+		max-width: 100%;
+	}
 
+	.mainsetion{
+		width: 100%;
+		overflow: auto;
+		float: left;
+		margin-left: 20px;
+	}
+
+	.social {
+		width: 100%;
+		float: left;
+		margin-left: 20px;
+	}
+
+	.portfoliosquare {
+		width: 47%;
+		margin-bottom: 10px;
+	}
+
+	.portfoliosquare:nth-child(even){
+		margin-right: 0;
+	}
+
+	.portfoliosquare:nth-child(odd){
+		float:right;
+	}
+
+	#mypic {
+		width: 50%;
+	}
+
+	.social{
+		margin-bottom: 40px;
+	}
 }
 
-@media only screen and (max-width: 640px ) {
+@media screen and (max-width: 640px ) {
+	.headersec{
+		position: static;
+		text-align:left;
+		max-width:100%;
+		margin-bottom: 20px;
+	}
 
+	#header{
+		padding: 0;
+	}	
+
+	#mainpage{
+		padding-top: 0;
+	}
+
+	.mainsection {
+		float:left;
+		overflow-wrap: auto;
+		margin-left: 10px
+	}
+
+	.social {
+		float: left;
+		margin-left: 10px;
+	}
+
+	 header  h1{
+	 	width: 100%;
+	 }
+
+	.portfoliosquare, 
+	.mypic {
+		width: 100%;
+	}
+
+	nav {
+		width: 100%;
+		margin: 15px;
+		text-align: center;
+	}
+
+	nav a {
+		width: 30%;
+		padding-left: 0;
+		margin-left: 0;
+	}
 }
